@@ -2,7 +2,7 @@
 import { useState, useMemo } from "react";
 import { cnQuestions, topicsList, levelsList } from "./CNdata";
 import Navbar from "../Components/Navbar";
-import CNdata from "./CNdata";
+import Cndata from "./Cndata";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 const levelColors = {
