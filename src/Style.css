@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --primary-subtle: #eff6ff;
+    --border-color: #e2e8f0;
+    --hover-bg: #f8fafc;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .dark {
+    --background: #040f2c;
+    --card-bg: #010613;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --primary: #3b82f6;
+    --primary-hover: #60a5fa;
+    --primary-subtle: #1e293b;
+    --border-color: #1e293b;
+    --hover-bg: #0f172a;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--text-primary)] min-h-screen;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 0;
+    min-width: 320px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Custom scrollbar for dark/light themes */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* LeetCode-inspired styles (unchanged, ensure compatibility) */
+  .header {
+    @apply p-4 flex justify-between items-center bg-[var(--card-bg)] border-b border-gray-700;
+  }
+
+  .nav {
+    @apply flex gap-6 items-center;
+  }
+
+  .logo {
+    @apply text-xl font-bold text-[var(--text-primary)];
+  }
+
+  .nav-item {
+    @apply text-[var(--text-secondary)] hover:text-[var(--primary)] cursor-pointer;
+  }
+
+  .profile {
+    @apply flex gap-4 items-center;
+  }
+
+  .username {
+    @apply text-[var(--text-secondary)];
+  }
+}
