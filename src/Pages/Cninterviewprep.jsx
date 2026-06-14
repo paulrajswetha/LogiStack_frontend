@@ -1,6 +1,6 @@
 // CNInterviewPrep.jsx
 import { useState, useMemo } from "react";
-import { cnQuestions, topicsList, levelsList } from "./CNdata";
+import { cnQuestions, topicsList, levelsList } from "./Cndata";
 import Navbar from "../Components/Navbar";
 import Cndata from "./Cndata";
 
