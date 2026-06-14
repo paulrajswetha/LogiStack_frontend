@@ -50,7 +50,7 @@ const AppContent = () => {
         <Route path="/solution/:id" element={<SolutionPage />} />
         <Route path="/user" element={<UserProfile />} />
         <Route path="/aptitude" element={<Aptitude />} />
-        <Route path="/dbms" element={<DBMSInterviewPrep />} /> 
+        <Route path="/dbms" element={<DBMSinterviewPrep />} /> 
         <Route path="/cn" element={<Cninterviewprep />} /> 
         <Route path="/os" element={<OSInterviewPrep />} />
         <Route path="/sql" element={<SQLInterviewPrep />} />
