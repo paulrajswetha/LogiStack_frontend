@@ -225,7 +225,7 @@ function QuizMode({ questions }) {
 }
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
-export default function DBMSInterviewPrep() {
+export default function DBMSinterviewPrep() {
   const [mode,          setMode]          = useState("study");   // "study" | "quiz"
   const [filterLevel,   setFilterLevel]   = useState("all");
   const [filterTopic,   setFilterTopic]   = useState("all");
