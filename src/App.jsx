@@ -13,7 +13,7 @@ import Contest from './Pages/Contest';
 import Explore from './Pages/Explore';
 import Aptitude from './Pages/Aptitude';
 import Footer from './Components/Footer';
-import DBMSInterviewPrep from './Pages/DBMSInterviewPrep';
+import DBMSinterviewPrep from './Pages/Dbmsinterviewprep';
 import Cninterviewprep from './Pages/Cninterviewprep';
 import OSInterviewPrep from './Pages/OSInterviewPrep';
 import ContestProblems from './Pages/ContestProblems';
