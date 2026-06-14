@@ -187,7 +187,7 @@ const Contest = () => {
 
   const fetchContests = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/contests');
+      const response = await axios.get('https://logistack-backend.onrender.com/api/contests');
       if (response.data && Array.isArray(response.data) && response.data.length > 0) {
         const now = new Date();
         const categorized = {

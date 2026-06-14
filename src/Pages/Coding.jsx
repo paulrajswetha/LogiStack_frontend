@@ -6,7 +6,7 @@ import Editor from '@monaco-editor/react';
 import { useTheme } from '../Components/ThemeContext';
 import Navbar from '../Components/Navbar';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://logistack-backend.onrender.com/api';
 
 /* ─── Language Configs ─────────────────────────────────────────────────────── */
 

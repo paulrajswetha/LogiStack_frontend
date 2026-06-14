@@ -15,7 +15,7 @@ const SolutionPage = () => {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/problems/${id}`)
+    axios.get(`https://logistack-backend.onrender.com/api/problems/${id}`)
       .then(res => setProblem(res.data))
       .catch(err => console.error(err));
   }, [id]);
@@ -24,7 +24,7 @@ const SolutionPage = () => {
     setIsRunning(true);
     setOutput('Running...');
     try {
-      const response = await axios.post(`http://localhost:5000/api/run/${id}`, {
+      const response = await axios.post(`https://logistack-backend.onrender.com/api/run/${id}`, {
         code,
         language: selectedLanguage.toLowerCase(),
       });
@@ -38,7 +38,7 @@ const SolutionPage = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/api/submit/${id}`, {
+      const response = await axios.post(`https://logistack-backend.onrender.com/api/submit/${id}`, {
         code,
         language: selectedLanguage.toLowerCase(),
       }, {

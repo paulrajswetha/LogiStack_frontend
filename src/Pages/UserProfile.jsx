@@ -16,7 +16,7 @@ const UserProfile = () => {
   const navigate = useNavigate();
 
   // Configure axios with base URL
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://logistack-backend.onrender.com/api';
 
   const api = axios.create({
     baseURL: API_BASE_URL,
@@ -50,7 +50,7 @@ const UserProfile = () => {
         // First, verify server is reachable
         console.log('Testing server connection...');
         try {
-          const healthCheck = await axios.get('http://localhost:5000/api/health');
+          const healthCheck = await axios.get('https://logistack-backend.onrender.com/api/health');
           console.log('Server health:', healthCheck.data);
         } catch (healthErr) {
           console.error('Server unreachable:', healthErr.message);

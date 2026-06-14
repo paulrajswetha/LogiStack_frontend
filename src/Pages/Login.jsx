@@ -22,7 +22,7 @@ export function Login() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post('https://logistack-backend.onrender.com/api/login', {
         email: formData.email.trim().toLowerCase(),
         password: formData.password,
       });

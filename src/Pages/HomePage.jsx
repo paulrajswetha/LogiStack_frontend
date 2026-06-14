@@ -15,7 +15,7 @@ const HomePage = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5000/api/problems?limit=100')
+    axios.get('https://logistack-backend.onrender.com/api/problems?limit=100')
       .then(res => {
         setProblems(res.data.problems || []);
         setLoading(false);
